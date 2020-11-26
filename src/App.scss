@@ -1,55 +1,99 @@
 $primary-color: #fff159;   
 $border-color: #c1b74d;
 $border-radius: 4px;
+$max-width:1100px;
 
-$max-width: 1100px;
 
-body {
-  background-color:#ebebeb;
+* {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
+.app{
+  min-height: 100%;
+}
+
+.main_container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: 
+    "header header"
+    "sidebar products_content"
+    "footer footer";
+}
+
+.main_container {
+  .header {
+  grid-area: header;
+  }
+  .products_content {
+    grid-area: products_content;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .footer {
+    grid-area: footer;
+    }
 }
 
 header {
   background-color: $primary-color;
 
   nav {
-    height: 65px;
+    height: 100px;
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: $max-width;
     margin: 0 auto;
 
     img {
-      height: 40px;
+      height: 60px;
       padding: 10px 18px;
     }
 
     .search-inputs {
-      margin-left: 120px;
-
-      input, button {
-        background-color: white;
-        border: 0;
-        padding: 5px 15px;
-        border-bottom: 1px solid rgba(black, 0.1);
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius:$border-radius;
-      }
-
-      input {
-        width: 400px;
-      }
-      
-      button {
-        border-left: 1px solid rgba(black, 0.1);
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-      }
+      margin-left: 10px;
     }
 
-  }
+    input, button {
+      background-color: white;
+      border: 0px;
+      padding: 5px 15px;
+      border-bottom: 1px solid rgba(black, 0.1);
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
 
+    input {
+      width: 400px;
+    }
+
+    button {
+      border-left: 1px solid rgba(black, 0.1);
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+  }
 }
+
+/*
+
+.products_container {
+  background-color: red;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+    .grid_container {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+}
+*/
 
 
