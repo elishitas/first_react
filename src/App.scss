@@ -79,7 +79,39 @@ header {
   }
 }
 
+.sidebar {
+  margin-left: 100px;
+  li{
+    list-style: none;
+  }
+}
+
+.products_content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1000px;
+  background-color: red;
+  align-content: space-between;
+
+  .grid_container {
+    height: 500px;
+    img {
+      height: 50%;
+    }
+  }
+  
+} 
+
 /*
+
+.products_content {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .products_container {
   background-color: red;
