@@ -7,7 +7,6 @@ import notebook3 from './assets/notebook3.webp';
 import Header from './components/Header';
 
 
-
 function App() {
   return (
     <div className="App">
@@ -22,6 +21,17 @@ function App() {
             </div>
           </nav>
         </header>
+        <aside className="sidebar">
+            <h2>Notebook</h2>
+            <p>30.906 resultados</p>
+            <h3>Categorias</h3>
+            <ul className="list">
+              <li>Categoria 1</li>
+              <li>Categoria 2</li>
+              <li>Categoria 3</li>
+              <li>Categoria 4</li>
+            </ul>
+          </aside>
         <main className="products_content">
             <div className="grid_container">
               <img src={notebook2} alt="notebook2"/>
@@ -110,17 +120,6 @@ function App() {
             </div>
             </div>
           </main>
-        <aside className="sidebar">
-            <h2>Notebook</h2>
-            <p>30.906 resultados</p>
-            <h3>Categorias</h3>
-            <ul className="list">
-              <li>Categoria 1</li>
-              <li>Categoria 2</li>
-              <li>Categoria 3</li>
-              <li>Categoria 4</li>
-            </ul>
-          </aside>
         <footer className="footer">
           <h3>Footer</h3>
         </footer>      
