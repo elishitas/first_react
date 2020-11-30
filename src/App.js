@@ -4,7 +4,6 @@ import logo from './assets/logo_meli.png';
 import notebook1 from './assets/notebook1.webp';
 import notebook2 from './assets/notebook2.webp';
 import notebook3 from './assets/notebook3.webp';
-import Header from './components/Header';
 
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
     <div className="App">
       <div className="main_container">
         <header className="header">
-          <Header text = "Soy el primer texto" />
           <nav>
             <img src={logo} alt="logo"/>
             <div className="search-inputs">
@@ -21,15 +19,16 @@ function App() {
             </div>
           </nav>
         </header>
-        <aside className="sidebar">
+        <aside className="aside_categories">
             <h2>Notebook</h2>
             <p>30.906 resultados</p>
             <h3>Categorias</h3>
-            <ul className="list">
+            <ul className="list_categories">
               <li>Categoria 1</li>
               <li>Categoria 2</li>
               <li>Categoria 3</li>
               <li>Categoria 4</li>
+              <li>Categoria 5</li>
             </ul>
           </aside>
         <main className="products_content">
